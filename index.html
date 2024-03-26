@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Stop watch</title>
+</head>
+
+<body class=" bg-black flex content-center items-center  h-screen bg-[url('/img/stopwatch.avif')] bg-no-repeat bg-cover ">
+  <div class="container h-96  ml-48 w-6/12 text-center p-5 rounded-xl ">
+  <p id="timer" class="text-center text-3xl font-bold bg-[#c96440] py-2 mx-52 rounded-2xl">00 : 00 : 00 : 00</p>
+  <div class="allBtn mt-10 mb-5  ">
+    <button class="btn border-gray-400  bg-green-950 text-white font-bold uppercase border-solid w-28 mx-1  rounded-xl py-2"  id="start" onclick="start()" >Start</button>
+    <button class="btn border-gray-400 bg-red-900 font-bold text-white border-solid w-28 mx-1  uppercase rounded-xl py-2" id="stop" onclick="stop()">Stop</button>
+    <button class="btn border-gray-400 bg-blue-900 text-white font-bold  border-solid w-28 mx-1  uppercase rounded-xl py-2" id="reset" onclick="resetTimer()">Reset</button>
+    <button class="btn border-gray-400 bg-slate-800 text-white font-bold  border-solid w-28 mx-1  uppercase rounded-xl py-2" id="get_time" onclick="getTimer()">Get Time</button>
+    <button class="btn border-gray-400 bg-white text-black font-bold  border-solid w-28 mx-1  uppercase rounded-xl py-2" id="clear_timeout "onclick="clrTime()" >Clear Time</button>
+</div>
+  <div id="getData" class=" max-h-80 py-1  text-center text-xl text-white font-extrabold"></div>
+</div>
+
+
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
+
+
